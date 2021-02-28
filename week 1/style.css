@@ -1,0 +1,408 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 14px;
+}
+.section-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+.logo{
+    cursor: pointer;
+}
+.block-1 input[type=text] {
+  padding: 5px;
+  border: none;
+  font-size: 12px;
+  width: 500px;
+  height: 30px;
+}
+.block-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.block-1 a{
+    margin: 10px;
+}
+button{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 7px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: #585858;
+}
+.sign-up{
+  background-color: #01ace5;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 7px;
+  transition-duration: 0.4s;
+}
+.sign-up:hover{
+  background-color: #0a97c6;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 7px;
+  transition-duration: 0.4s;
+}
+
+/*
+-------------------------------lower header(navigation bar)
+*/
+
+.section-2{
+    background-color: #252525;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+li{
+    background-color: #252525;
+}
+li button{
+    margin-top: 6px;
+    border-radius: 0px;
+    background-color: #252525;
+    border-bottom: 2px solid #252525;
+}
+li button:hover{
+    background-color: #252525;
+    border-bottom: 2px solid orange;
+}
+
+/*
+------------------------Footer
+*/
+
+footer{
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+.row{
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.upper-footer{
+    background-color: #252525;
+}
+.upper-footer-left{
+    display: flex;
+}
+.upper-footer-right{
+    
+}
+.lower-footer{
+    
+}
+.foot-ul{
+    display: contents;
+}
+.foot-ul li{
+    margin: 10px 0;
+}
+.foot-ul a{
+    margin: 0 10px;
+}
+.col{
+    font-size: 12px;
+    color: #bababa;
+    margin-right:20px;
+    
+}
+.row a{
+    color: white;
+}
+.row a:hover{
+    text-decoration: underline;
+}
+.lower-ul li{
+    font-size: 14px;
+    background-color: black;
+    padding-right:10px;;
+}
+
+/*
+---------------------BODY IS HERE
+*/
+
+#hero-space{
+    background-image:url(images/homepage-hero-lg.jpg);
+    height: 350px;
+    width: 100%;
+    position: relative;
+    background-position: top 20% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255 ,.7);
+}
+.hero-text{
+    height: 350px;
+    min-height: 350px;
+    padding: 5% 12%;
+    position: relative;
+    text-align: center;
+}
+.hero-text img{
+    height: 40px;
+}
+h1{
+    margin: 8px 0;
+    padding: 0;
+    font-size: 40px;
+}
+.hero-text a{
+    color: black;
+}
+.hero-text button{
+    border: 1px solid orange;
+    background-color: #ffce00;
+}
+.hero-text button:hover{
+    border: 1px solid orange;
+    background-color: #e3b609;
+}
+.container-1{
+    display: flex;
+    margin: 20px 50px;
+}
+.container-1 div{
+    border: 1px solid #ccc;
+}
+.box-1{
+    flex: 1;
+    background-image: url(images/software-development-bg.jpg);
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 70px 0;
+    color: white;
+    transition: .6s;
+    background-size: 100%;
+    background-position: center;
+}
+.box-1 p,h2{
+    margin: 10px 0;
+}
+.box-1:hover{
+    background-size: 130%;
+    cursor: pointer;
+}
+.box-2{
+    flex: 1;
+    margin: 10px;
+    color: white;
+}
+.inside-box-2-a{
+    background-image: url(images/design-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    transition: .6s;
+    background-size: 100%;
+}
+.inside-box-2-b{
+    background-image: url(images/web-development-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0;
+    transition: .6s;
+    background-size: 100%;
+}
+.box-3{
+    flex: 1;
+    margin: 10px;
+    color: white;
+}
+.inside-box-3-a{
+    background-image: url(images/business-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    transition: .6s;
+    background-size: 100%;
+}
+.inside-box-3-b{
+    background-image: url(images/photography-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0;
+    transition: .6s;
+    background-size: 100%;
+}
+.inside-box-2-b:hover,.inside-box-2-a:hover,.inside-box-3-a:hover,.inside-box-3-b:hover{
+    background-size: 120%;
+    cursor: pointer;
+}
+
+/* 
+----------------------CONTAINER-2
+*/
+
+.container-2{
+    padding: 10px;
+    margin: 50px;
+    text-align: center;
+}
+.container-2 img{
+    width: 40px;
+}
+.container-2 .upper-box{
+    display: flex;
+    justify-content: space-around;
+}
+.container-2 .left-box h3,.container-2 .right-box h3{
+    margin: 5px;
+}
+.lower-box button{
+    background-color: orange;
+}
+.lower-box a{
+    color: black;
+}
+
+/* 
+----------------------CONTAINER-3
+*/
+
+.container-3{
+    
+}
+.container-3 h2{
+    text-align: center;
+}
+.lower-navigation{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.lower-navigation ul li,.lower-navigation ul li a{
+    background-color: white;
+    color: black;
+    margin: 10px 3px;
+}
+.lower-navigation button{
+    color: black;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    transition-duration: 0s;
+    
+}
+.lower-navigation button:hover{
+    border-bottom-color: aqua;
+    background-color: transparent;
+}
+.bt{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.butt-left{
+    background-color: orange;
+    margin: 0 10px;
+}
+.butt-right{
+    background-color: transparent;
+    margin: 0 10px;
+}
+.bt button{
+    border: 2px solid gray;
+}
+.bt button:hover{
+    background-color: transparent;
+    border-color: black;
+}
+
+/*--------------Middle Division-------------*/
+
+.middle-division{
+    margin: 20px 10%;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+.middle-division img{
+    width: 100%;
+}
+.middle-division li{
+    background-color: white;
+    margin-left: 10px;
+}
+.middle-division h3{
+    font-size: 16px;
+}
+.time-views ul li{
+    font-size: 12px;
+    list-style: disc;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
